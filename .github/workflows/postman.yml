@@ -17,7 +17,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
       - name: Run Server
-        run: go run . && 
+        run: go run . &
       - name: Run Postman Collection A
         uses: matt-ball/newman-action@master
         with:

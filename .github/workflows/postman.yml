@@ -26,8 +26,6 @@ jobs:
 
       - name: Server Warmup Time
         run: sleep 5
-      
-      - run: curl http://localhost:8080/ping
 
       - name: Run Postman Collection A
         uses: matt-ball/newman-action@master

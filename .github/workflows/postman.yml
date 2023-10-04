@@ -9,12 +9,9 @@ on:
 jobs:
   postman-test:
     runs-on: ubuntu-latest
-    services:
-      api:
-        image: golang
-        ports:
-          - 8080:8080
-        entrypoint: go run .
+    defaults:
+      run: go run .
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

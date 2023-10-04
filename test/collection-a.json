@@ -12,9 +12,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/ping",
+					"raw": "127.0.0.1:8080/ping",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "8080",
 					"path": [
@@ -44,9 +44,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/version",
+					"raw": "127.0.0.1:8080/version",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "8080",
 					"path": [

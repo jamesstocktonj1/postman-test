@@ -14,7 +14,7 @@ jobs:
         image: golang
         ports:
           - 8080:8080
-        run: go run .
+        entrypoint: go run .
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

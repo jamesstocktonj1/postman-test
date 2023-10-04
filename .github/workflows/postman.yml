@@ -16,8 +16,12 @@ jobs:
           go-version: 1.19
       - name: Checkout Code
         uses: actions/checkout@v3
+      - name: Download Dependencies
+        run: go mod download
       - name: Run Server
         run: go run . &
+      - name: Server Warmup Time
+        run: sleep 5
       - name: Run Postman Collection A
         uses: matt-ball/newman-action@master
         with:
